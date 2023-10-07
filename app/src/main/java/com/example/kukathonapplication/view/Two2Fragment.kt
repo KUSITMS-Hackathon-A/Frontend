@@ -11,12 +11,20 @@ import androidx.navigation.fragment.findNavController
 import com.example.kukathonapplication.R
 import com.example.kukathonapplication.base.BaseFragment
 import com.example.kukathonapplication.databinding.FragmentTwo2Binding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class Two2Fragment : BaseFragment<FragmentTwo2Binding>(R.layout.fragment_two2) {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val activityy = activity as MainActivity
+
+        val bottomnav = activityy.findViewById<BottomNavigationView>(R.id.bottom_navi)
+
+        bottomnav.visibility= View.GONE
 
     }
 

@@ -10,12 +10,21 @@ import android.webkit.WebViewClient
 import com.example.kukathonapplication.R
 import com.example.kukathonapplication.base.BaseFragment
 import com.example.kukathonapplication.databinding.FragmentTwo3Binding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class Two3Fragment : BaseFragment<FragmentTwo3Binding>(R.layout.fragment_two3) {
 
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val activityy = activity as MainActivity
 
+        val bottomnav = activityy.findViewById<BottomNavigationView>(R.id.bottom_navi)
+
+        bottomnav.visibility= View.GONE
+
+    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
