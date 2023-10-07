@@ -29,9 +29,7 @@
             app:menu="@menu/bottom_navi_item"
             app:itemRippleColor="@null"
             app:itemActiveIndicatorStyle="@null"
-            app:itemBackground="@color/white"
-            app:itemIconTint="@color/black"
-            />
+            app:itemIconTint="@drawable/menu1_selector"/>
 
 
 
