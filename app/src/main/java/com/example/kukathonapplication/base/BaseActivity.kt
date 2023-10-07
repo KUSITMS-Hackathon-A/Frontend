@@ -7,7 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import com.example.kukathonapplication.R
 
-class BaseActivity<T : ViewDataBinding> ( @LayoutRes val layoutRes: Int) : AppCompatActivity() {
+abstract class BaseActivity<T : ViewDataBinding> ( @LayoutRes val layoutRes: Int) : AppCompatActivity() {
 
     protected lateinit var binding : T
 
