@@ -12,7 +12,7 @@ import com.example.kukathonapplication.R
 
 
 
-class BaseFragment <T: ViewDataBinding> (@LayoutRes val layoutRes: Int): Fragment() {
+abstract class BaseFragment <T: ViewDataBinding> (@LayoutRes val layoutRes: Int): Fragment() {
 
 
     lateinit var binding : T
