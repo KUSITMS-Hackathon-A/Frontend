@@ -16,6 +16,7 @@ data class Content(
     val productId: Int,
     val progress: Int
 )
+
 data class detail(
     val code: Int,
     val data: detailcontent,
@@ -26,8 +27,15 @@ data class detail(
 data class detailcontent(
     val category: String,
     val description: String,
+    val progressTitle:String,
+    val progressDescription:String,
+    val progress : Int,
+    val description1: String,
+    val description2: String,
     val enterprise: String,
     val imageUrl: String,
+    val imageUrl1: String,
+    val imageUrl2: String,
     val name: String,
     val price: String
 )

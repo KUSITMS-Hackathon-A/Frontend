@@ -1,9 +1,11 @@
 package com.example.kukathonapplication.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,7 +17,7 @@ import com.example.kukathonapplication.base.BaseFragment
 import com.example.kukathonapplication.databinding.FragmentOneBinding
 import com.example.kukathonapplication.viewmodel.OneViewModel
 
-class OneFragment : BaseFragment<FragmentOneBinding>(R.layout.fragment_one) {
+class OneFragment : BaseFragment<FragmentOneBinding>(R.layout.fragment_one),HomeAdapter.onDetailItemClickListener {
     private val viewModel by viewModels<OneViewModel>()
     private lateinit var homeAdapter: HomeAdapter
 
@@ -39,8 +41,11 @@ class OneFragment : BaseFragment<FragmentOneBinding>(R.layout.fragment_one) {
         homeAdapter = HomeAdapter(mutableListOf())
         recyclerView.adapter = homeAdapter
 
+        homeAdapter.onDetailClickListener = this
+
         viewModel.alldata.observe(viewLifecycleOwner){ data->
             homeAdapter = HomeAdapter(data)
+            homeAdapter.onDetailClickListener = this
             recyclerView.adapter = homeAdapter
         }
         binding.selectA.setOnClickListener{
@@ -68,6 +73,15 @@ class OneFragment : BaseFragment<FragmentOneBinding>(R.layout.fragment_one) {
         )
         binding.title.text = spannable
 
+    }
+
+    override fun onDetailItemClicked(productId: Int) {
+        //화면전환
+        Log.e("intent","전")
+        val intent= Intent(activity,DetailInfoActivity::class.java)
+        intent.putExtra("productId", productId)
+        Log.e("intent","후")
+        startActivity(intent)
     }
 
 }

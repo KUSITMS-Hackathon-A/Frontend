@@ -31,7 +31,11 @@
             android:exported="false" />
         <activity
             android:name=".view.MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".view.DetailInfoActivity"
             android:exported="true">
+
 
         </activity>
     </application>
