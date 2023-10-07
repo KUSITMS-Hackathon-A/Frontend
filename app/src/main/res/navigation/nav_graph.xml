@@ -20,10 +20,18 @@
         android:id="@+id/twoFragment"
         android:name="com.example.kukathonapplication.view.TwoFragment"
         android:label="fragment_two"
-        tools:layout="@layout/fragment_two" />
+        tools:layout="@layout/fragment_two" >
+        <action
+            android:id="@+id/action_twoFragment_to_two2Fragment"
+            app:destination="@id/two2Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/threeFragment"
         android:name="com.example.kukathonapplication.view.ThreeFragment"
         android:label="fragment_three"
         tools:layout="@layout/fragment_three" />
+    <fragment
+        android:id="@+id/two2Fragment"
+        android:name="com.example.kukathonapplication.view.Two2Fragment"
+        android:label="Two2Fragment" />
 </navigation>

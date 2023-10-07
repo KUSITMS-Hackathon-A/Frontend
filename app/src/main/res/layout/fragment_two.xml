@@ -1,21 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-<FrameLayout
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="#F6F6F6"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".view.TwoFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/pretendardsemibold"
+        android:text="가치 보도"
+        android:textColor="#15191D"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/word"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
-    <WebView
-        android:id="@+id/web"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="300dp"/>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="5dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" >
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_card1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trust"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="19dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RE:BUD"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/pretendardsemibold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="어르신들과 함께 버려지는 교복을 활용하여 \n고용 문제에 해결에 기여하는 브랜드"
+                    android:fontFamily="@font/pretendardregular"
+                    android:textSize="12sp"
+                    android:layout_marginTop="8dp"/>
+
+                <LinearLayout
+                    android:layout_marginTop="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="62명의 어르신"
+                        android:drawableLeft="@drawable/speaker"
+                        android:drawablePadding="8dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/pretendardbold"
+                        android:textColor="#4076E4"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="들의 삶에 힘을 보태주었어요!"
+                        android:fontFamily="@font/pretendardsemibold"
+                        android:textColor="#15191D"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people1"
+                    android:layout_marginTop="12dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="5dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card1" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="19dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="고마운 사람들"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/pretendardsemibold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="편백대란과 장애인 생산품 판매 수익으로 기부하는 \n나눔을 실천하는 기부하는 쇼핑몰"
+                    android:fontFamily="@font/pretendardregular"
+                    android:textSize="12sp"
+                    android:layout_marginTop="8dp"/>
+
+                <LinearLayout
+                    android:layout_marginTop="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14명의 장애인"
+                        android:drawableLeft="@drawable/speaker"
+                        android:drawablePadding="8dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/pretendardbold"
+                        android:textColor="#4076E4"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="들의 삶에 힘을 보태주었어요!"
+                        android:fontFamily="@font/pretendardsemibold"
+                        android:textColor="#15191D"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/people2"
+                    android:layout_marginTop="12dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>
