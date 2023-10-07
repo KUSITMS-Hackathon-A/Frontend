@@ -1,14 +1,14 @@
-package com.example.kukathonapplication
+package com.example.kukathonapplication.view
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.kukathonapplication.R
 import com.example.kukathonapplication.base.BaseFragment
-import com.example.kukathonapplication.databinding.FragmentOneBinding
+import com.example.kukathonapplication.databinding.FragmentThreeBinding
 
-class OneFragment : BaseFragment<FragmentOneBinding>(R.layout.fragment_one) {
+class ThreeFragment : BaseFragment<FragmentThreeBinding>(R.layout.fragment_three) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

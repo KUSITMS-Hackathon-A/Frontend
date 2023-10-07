@@ -1,14 +1,17 @@
-package com.example.kukathonapplication
+package com.example.kukathonapplication.view
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
+import com.example.kukathonapplication.R
 import com.example.kukathonapplication.base.BaseFragment
-import com.example.kukathonapplication.databinding.FragmentTwoBinding
+import com.example.kukathonapplication.databinding.FragmentOneBinding
+import com.example.kukathonapplication.viewmodel.OneViewModel
 
-class TwoFragment : BaseFragment<FragmentTwoBinding>(R.layout.fragment_two) {
+class OneFragment : BaseFragment<FragmentOneBinding>(R.layout.fragment_one) {
+    private val viewModel by viewModels<OneViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +26,8 @@ class TwoFragment : BaseFragment<FragmentTwoBinding>(R.layout.fragment_two) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.viewModel = viewModel
+        binding.lifecycleOwner = this
     }
 
 }

@@ -2,11 +2,29 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.kukathonapplication.viewmodel.OneViewModel" />
+    </data>
 
-<FrameLayout
+<androidx.appcompat.widget.LinearLayoutCompat
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OneFragment">
+    tools:context=".view.OneFragment"
+    android:orientation="vertical">
 
-</FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사회적 가치를 실현,"
+        android:fontFamily="@font/pretendardsemibold"
+        android:textSize="20sp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="45dp"
+        />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
 </layout>
