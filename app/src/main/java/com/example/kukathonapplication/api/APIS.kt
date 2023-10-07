@@ -4,6 +4,8 @@ package com.example.kukathonapplication.api
 import com.example.kukathonapplication.model.ResponseEnterpriseList
 import com.example.kukathonapplication.model.enterpriseInfo
 import com.example.kukathonapplication.Datamodel
+import com.example.kukathonapplication.model.ResponseCommentList
+import com.example.kukathonapplication.model.comments
 import retrofit2.Call
 import retrofit2.http.GET
 
@@ -21,5 +23,10 @@ interface APIS {
     fun getEnterpriseList(
 
     ) : Call<ResponseEnterpriseList>
+
+    @GET("comment/list")
+    fun getCommentList(
+
+    ) : Call<ResponseCommentList>
 
 }
