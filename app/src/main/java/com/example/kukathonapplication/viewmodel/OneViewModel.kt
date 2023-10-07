@@ -18,6 +18,7 @@ class OneViewModel : ViewModel() {
     private val _alldata = MutableLiveData<List<Content>>()
     val alldata:LiveData<List<Content>> = _alldata
 
+
     init {
         fetchAllResult()
     }

@@ -19,6 +19,11 @@ import com.example.kukathonapplication.R
 import org.w3c.dom.Text
 
 class HomeAdapter(private var items:List<Content>):RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
+    var onDetailClickListener:onDetailItemClickListener?=null
+    interface onDetailItemClickListener{
+        fun onDetailItemClicked(productId:Int)
+    }
+
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         //val image:
@@ -59,7 +64,12 @@ class HomeAdapter(private var items:List<Content>):RecyclerView.Adapter<HomeAdap
         holder.percentage.text = spannable
         Glide.with(holder.itemView.context)
             .load(list.imageUrl)
+            .centerCrop()
             .into(holder.image)
+
+        holder.itemView.setOnClickListener{
+            onDetailClickListener?.onDetailItemClicked(items[position].productId)
+        }
 
     }
 
@@ -70,4 +80,6 @@ class HomeAdapter(private var items:List<Content>):RecyclerView.Adapter<HomeAdap
         this.items = newData
         notifyDataSetChanged()
     }
+
+
 }

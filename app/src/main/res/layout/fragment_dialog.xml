@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.DialogFragment"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/close"
+        android:layout_gravity="right"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="감사합니다!"
+        android:fontFamily="@font/pretendardsemibold"
+        android:textSize="20sp"
+        android:textColor="@color/B1"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"/>
+    <ImageView
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@drawable/gift"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/B1"
+        android:text="당신의 소행 덕분에\n사람들의 삶이 개선되었어요!"
+        android:fontFamily="@font/pretendardsemibold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="95dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginLeft="49dp"/>
+
+</LinearLayout>
+</layout>

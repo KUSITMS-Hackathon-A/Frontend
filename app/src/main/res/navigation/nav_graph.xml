@@ -34,4 +34,9 @@
         android:id="@+id/two2Fragment"
         android:name="com.example.kukathonapplication.view.Two2Fragment"
         android:label="Two2Fragment" />
+    <dialog
+        android:id="@+id/dialogFragment"
+        android:name="com.example.kukathonapplication.view.DialogFragment"
+        android:label="fragment_dialog"
+        tools:layout="@layout/fragment_dialog" />
 </navigation>
