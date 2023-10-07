@@ -19,7 +19,6 @@ abstract class BaseFragment <T: ViewDataBinding> (@LayoutRes val layoutRes: Int)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
@@ -30,8 +29,6 @@ abstract class BaseFragment <T: ViewDataBinding> (@LayoutRes val layoutRes: Int)
         binding = DataBindingUtil.inflate(inflater,layoutRes,container,false)
 
         val view = binding.root
-
-
         return view
     }
 

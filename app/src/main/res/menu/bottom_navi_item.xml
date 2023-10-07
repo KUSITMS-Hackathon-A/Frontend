@@ -3,18 +3,16 @@
     <item
         android:id="@+id/home"
         android:title="홈"
-        android:icon="@drawable/menu_selector"
+        android:icon="@drawable/home_active"
         android:enabled="true"/>
     <item
         android:id="@+id/item2"
         android:title="2번"
-        android:icon="@drawable/menu_selector"
+        android:icon="@drawable/item2_active"
         android:enabled="true"/>
     <item
         android:id="@+id/item3"
         android:title="3번"
-        android:icon="@drawable/menu_selector"
+        android:icon="@drawable/item3_active"
         android:enabled="true"/>
-
-
 </menu>
