@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="19dp"
         android:fontFamily="@font/pretendardsemibold"
         android:text="가치 보도"
         android:textColor="#15191D"
