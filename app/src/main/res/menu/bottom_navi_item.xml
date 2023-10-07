@@ -7,12 +7,12 @@
         android:enabled="true"/>
     <item
         android:id="@+id/item2"
-        android:title="2번"
+        android:title="가치 보도"
         android:icon="@drawable/item2_active"
         android:enabled="true"/>
     <item
         android:id="@+id/item3"
-        android:title="3번"
+        android:title="마이페이지"
         android:icon="@drawable/item3_active"
         android:enabled="true"/>
 </menu>
