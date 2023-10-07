@@ -1,6 +1,7 @@
 package com.example.kukathonapplication.view
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -17,6 +18,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class Two3Fragment : BaseFragment<FragmentTwo3Binding>(R.layout.fragment_two3) {
 
 
+    var showvideo = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val activityy = activity as MainActivity
@@ -40,14 +42,16 @@ class Two3Fragment : BaseFragment<FragmentTwo3Binding>(R.layout.fragment_two3) {
         super.onViewCreated(view, savedInstanceState)
 
 
+        showvideo = arguments?.getString("videoURL").toString()
 
+        Log.d("showvideo", showvideo)
         val webSettings: WebSettings = binding.web.settings
         webSettings.javaScriptEnabled = true
 
 
         binding.web.webViewClient = WebViewClient()
 
-        binding.web.loadUrl("https://www.youtube.com/shorts/r8zg091XPmI")
+        binding.web.loadUrl(showvideo)
 
         //뒤로가기
 
