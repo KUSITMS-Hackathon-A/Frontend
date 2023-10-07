@@ -29,7 +29,8 @@
             app:menu="@menu/bottom_navi_item"
             app:itemRippleColor="@null"
             app:itemActiveIndicatorStyle="@null"
-            app:itemIconTint="@drawable/menu1_selector"/>
+            app:itemIconTint="@drawable/menu1_selector"
+            android:background="@color/white"/>
 
 
 

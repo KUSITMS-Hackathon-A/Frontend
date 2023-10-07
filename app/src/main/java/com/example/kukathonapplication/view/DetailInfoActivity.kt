@@ -41,6 +41,9 @@ class DetailInfoActivity : BaseActivity<ActivityDetailInfoBinding>(R.layout.acti
             val dialog = DialogFragment()
             dialog.show(supportFragmentManager, "tag")
         }
+        binding.backbtn.setOnClickListener{
+            onBackPressed()
+        }
     }
 
     fun fetchDetail(id:Int){
