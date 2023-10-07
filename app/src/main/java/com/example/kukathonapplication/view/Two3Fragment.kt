@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebSettings
 import android.webkit.WebViewClient
+import androidx.navigation.fragment.findNavController
 import com.example.kukathonapplication.R
 import com.example.kukathonapplication.base.BaseFragment
 import com.example.kukathonapplication.databinding.FragmentTwo3Binding
@@ -48,6 +49,12 @@ class Two3Fragment : BaseFragment<FragmentTwo3Binding>(R.layout.fragment_two3) {
 
         binding.web.loadUrl("https://www.youtube.com/shorts/r8zg091XPmI")
 
+        //뒤로가기
+
+        binding.imageView3.setOnClickListener {
+            val navController = findNavController()
+            navController.popBackStack()
+        }
     }
 
 

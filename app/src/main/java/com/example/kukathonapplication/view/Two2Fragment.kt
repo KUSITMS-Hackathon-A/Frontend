@@ -17,7 +17,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class Two2Fragment : BaseFragment<FragmentTwo2Binding>(R.layout.fragment_two2) {
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val activityy = activity as MainActivity
@@ -44,8 +43,8 @@ class Two2Fragment : BaseFragment<FragmentTwo2Binding>(R.layout.fragment_two2) {
         //비디오 클릭 이벤트
 
         binding.btnVideo.setOnClickListener {
-            val navController = findNavController()
 
+            val navController = findNavController()
             navController.navigate(R.id.action_two2Fragment_to_two3Fragment)
         }
 
@@ -58,6 +57,12 @@ class Two2Fragment : BaseFragment<FragmentTwo2Binding>(R.layout.fragment_two2) {
             startActivity(intent)
 
 
+        }
+
+        //뒤로가기
+        binding.imageView2.setOnClickListener {
+            val navController = findNavController()
+            navController.popBackStack()
         }
     }
 
