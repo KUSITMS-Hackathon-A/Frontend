@@ -9,5 +9,7 @@
     <color name="B4">#D2D7DC</color>
     <color name="B5">#EDF1F7</color>
     <color name="B6">#F4F8FD</color>
+    <color name="main1">#4076E4</color>
+    <color name="select">#666B6F</color>
 
 </resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_product"
+    android:layout_marginBottom="16dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/search"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="고마운 사람들"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/pretendardsemibold"
+        android:textSize="12sp"
+        android:textColor="@color/B3"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="2sp"/>
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/company_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="15dp"
+        android:text="국내산 편백 나무 방향제"
+        android:fontFamily="@font/pretendardsemibold"
+        android:textSize="14sp"
+        android:textColor="@color/B1"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="3sp"/>
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="목표 금액 달성시 어르신 일자리 지원"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_name"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/pretendardregular"
+        android:textSize="12sp"
+        android:textColor="@color/B3"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="2sp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_name"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"
+        android:text="22,500원"
+        android:textSize="16sp"
+        android:fontFamily="@font/pretendardsemibold"
+        android:textColor="@color/B1"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="3sp"/>
+    <SeekBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        app:layout_constraintTop_toBottomOf="@id/detail"
+        android:layout_marginTop="20dp"
+        android:max="100"
+        android:progress="90"
+        android:progressDrawable="@drawable/bg_seekbar"
+        android:thumb="@drawable/bg_seekbar_thumb"
+        android:splitTrack="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_percent"
+        android:text="달성까지 1% 남았어요!"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:fontFamily="@font/pretendardregular"
+        android:textSize="10sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="12dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
