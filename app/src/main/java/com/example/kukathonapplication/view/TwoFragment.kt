@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebSettings
 import android.webkit.WebViewClient
+import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.example.kukathonapplication.R
 import com.example.kukathonapplication.base.BaseFragment
@@ -33,9 +34,13 @@ class TwoFragment : BaseFragment<FragmentTwoBinding>(R.layout.fragment_two) {
 
         binding.btnCard1.setOnClickListener {
 
+
+
+
+            val bundle = bundleOf()
             val navController = findNavController()
 
-            navController.navigate(R.id.action_twoFragment_to_two2Fragment)
+            navController.navigate(R.id.action_twoFragment_to_two2Fragment,bundle)
         }
 
 

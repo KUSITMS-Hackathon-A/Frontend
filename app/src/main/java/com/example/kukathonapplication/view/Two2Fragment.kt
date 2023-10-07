@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.kukathonapplication.R
 import com.example.kukathonapplication.base.BaseFragment
 import com.example.kukathonapplication.databinding.FragmentTwo2Binding
@@ -34,6 +35,11 @@ class Two2Fragment : BaseFragment<FragmentTwo2Binding>(R.layout.fragment_two2) {
 
         //비디오 클릭 이벤트
 
+        binding.btnVideo.setOnClickListener {
+            val navController = findNavController()
+
+            navController.navigate(R.id.action_two2Fragment_to_two3Fragment)
+        }
 
         //뉴스 쿨릭 이벤트
 
