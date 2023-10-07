@@ -40,11 +40,6 @@ class TwoFragment : BaseFragment<FragmentTwoBinding>(R.layout.fragment_two) {
 
 
 
-//        binding.news.setOnClickListener {
-//            val news = "https://www.rebud.co.kr/News/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=7075162&t=board"
-//            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(news))
-//            startActivity(intent)
-//        }
 
 //        val webSettings: WebSettings = binding.web.settings
 //        webSettings.javaScriptEnabled = true

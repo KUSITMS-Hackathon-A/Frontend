@@ -1,5 +1,7 @@
 package com.example.kukathonapplication.view
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -28,6 +30,21 @@ class Two2Fragment : BaseFragment<FragmentTwo2Binding>(R.layout.fragment_two2) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
+        //비디오 클릭 이벤트
+
+
+        //뉴스 쿨릭 이벤트
+
+        binding.btnNews.setOnClickListener {
+
+            val news = "https://www.rebud.co.kr/News/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=7075162&t=board"
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(news))
+            startActivity(intent)
+
+
+        }
     }
 
 
