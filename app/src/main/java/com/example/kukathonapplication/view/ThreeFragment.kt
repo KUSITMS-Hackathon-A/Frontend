@@ -24,6 +24,8 @@ class ThreeFragment : BaseFragment<FragmentThreeBinding>(R.layout.fragment_three
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
     }
 
 }
