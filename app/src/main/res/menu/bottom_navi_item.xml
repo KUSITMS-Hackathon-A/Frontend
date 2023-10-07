@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="홈"
+        android:icon="@drawable/menu_selector"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/item2"
+        android:title="2번"
+        android:icon="@drawable/menu_selector"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/item3"
+        android:title="3번"
+        android:icon="@drawable/menu_selector"
+        android:enabled="true"/>
+
+
+</menu>
