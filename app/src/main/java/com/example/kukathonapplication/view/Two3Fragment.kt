@@ -53,7 +53,7 @@ class Two3Fragment : BaseFragment<FragmentTwo3Binding>(R.layout.fragment_two3) {
 
         binding.imageView3.setOnClickListener {
             val navController = findNavController()
-            navController.popBackStack()
+            navController.navigate(R.id.action_two3Fragment_to_two2Fragment)
         }
     }
 

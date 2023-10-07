@@ -62,7 +62,7 @@ class Two2Fragment : BaseFragment<FragmentTwo2Binding>(R.layout.fragment_two2) {
         //뒤로가기
         binding.imageView2.setOnClickListener {
             val navController = findNavController()
-            navController.popBackStack()
+            navController.navigate(R.id.action_two2Fragment_to_twoFragment)
         }
     }
 

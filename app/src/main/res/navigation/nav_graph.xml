@@ -37,9 +37,16 @@
         <action
             android:id="@+id/action_two2Fragment_to_two3Fragment"
             app:destination="@id/two3Fragment" />
+        <action
+            android:id="@+id/action_two2Fragment_to_twoFragment"
+            app:destination="@id/twoFragment" />
     </fragment>
     <fragment
         android:id="@+id/two3Fragment"
         android:name="com.example.kukathonapplication.view.Two3Fragment"
-        android:label="Two3Fragment" />
+        android:label="Two3Fragment" >
+        <action
+            android:id="@+id/action_two3Fragment_to_two2Fragment"
+            app:destination="@id/two2Fragment" />
+    </fragment>
 </navigation>
