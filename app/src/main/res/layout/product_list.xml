@@ -48,8 +48,8 @@
 
     <TextView
         android:id="@+id/detail"
-        android:layout_width="172dp"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
         android:text="목표 금액 달성시 어르신 일자리 지원"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/product_name"
