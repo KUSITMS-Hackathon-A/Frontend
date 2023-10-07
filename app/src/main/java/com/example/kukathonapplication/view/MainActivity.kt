@@ -1,10 +1,10 @@
-package com.example.kukathonapplication
+package com.example.kukathonapplication.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.example.kukathonapplication.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -20,13 +20,13 @@ class MainActivity : AppCompatActivity() {
 
         bottomNavi.setOnItemSelectedListener {item->
             when(item.itemId){
-                R.id.home-> {
+                R.id.home -> {
                     navController.navigate(R.id.oneFragment)
                 true}
-                R.id.item2->{
+                R.id.item2 ->{
                     navController.navigate(R.id.twoFragment)
                     true}
-                R.id.item3->{
+                R.id.item3 ->{
                     navController.navigate(R.id.threeFragment)
                     true}
 

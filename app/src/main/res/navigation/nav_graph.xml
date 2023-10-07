@@ -8,22 +8,22 @@
 
     <activity
         android:id="@+id/mainActivity"
-        android:name="com.example.kukathonapplication.MainActivity"
+        android:name="com.example.kukathonapplication.view.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
     <fragment
         android:id="@+id/oneFragment"
-        android:name="com.example.kukathonapplication.OneFragment"
+        android:name="com.example.kukathonapplication.view.OneFragment"
         android:label="fragment_one"
         tools:layout="@layout/fragment_one" />
     <fragment
         android:id="@+id/twoFragment"
-        android:name="com.example.kukathonapplication.TwoFragment"
+        android:name="com.example.kukathonapplication.view.TwoFragment"
         android:label="fragment_two"
         tools:layout="@layout/fragment_two" />
     <fragment
         android:id="@+id/threeFragment"
-        android:name="com.example.kukathonapplication.ThreeFragment"
+        android:name="com.example.kukathonapplication.view.ThreeFragment"
         android:label="fragment_three"
         tools:layout="@layout/fragment_three" />
 </navigation>
