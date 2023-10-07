@@ -10,6 +10,8 @@
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="140dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
         android:src="@drawable/select1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -46,7 +48,7 @@
 
     <TextView
         android:id="@+id/detail"
-        android:layout_width="wrap_content"
+        android:layout_width="172dp"
         android:layout_height="wrap_content"
         android:text="목표 금액 달성시 어르신 일자리 지원"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -81,11 +83,13 @@
         android:layout_marginTop="20dp"
         android:max="100"
         android:progress="90"
+        android:enabled = "false"
         android:progressDrawable="@drawable/bg_seekbar"
         android:thumb="@drawable/bg_seekbar_thumb"
         android:splitTrack="false"/>
 
     <TextView
+        android:id="@+id/resulttxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_percent"

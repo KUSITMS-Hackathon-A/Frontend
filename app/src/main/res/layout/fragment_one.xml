@@ -185,10 +185,12 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/select_container"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:paddingTop="16dp"
+        android:orientation="vertical"
         tools:listitem="@layout/product_list"/>
 
 
