@@ -28,6 +28,9 @@ class Two2Fragment : BaseFragment<FragmentTwo2Binding>(R.layout.fragment_two2) {
     private lateinit var API : APIS
     var enterpriseInfo  = ArrayList<enterpriseInfo>()
     var commentList = ArrayList<comments>()
+    var comment1 = ""
+    var comment2= ""
+    var comment3 = ""
 
     var newsURL = ""
     var videoURL = ""
@@ -75,6 +78,8 @@ class Two2Fragment : BaseFragment<FragmentTwo2Binding>(R.layout.fragment_two2) {
 
                                 commentList = response.body()!!.data
                                 Log.d("comments : " , " success , ${response.body().toString()}")
+
+
 
                                 val bundle = bundleOf("videoURL" to videoURL)
 
